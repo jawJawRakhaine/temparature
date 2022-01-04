@@ -6,7 +6,7 @@ const searchTemperature = () => {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appid=${API_KEY}&units=metric`;
 
   if (cityName.length === 0) {
-    alert("Please enter a city name");
+    alert("Please enter a country name");
   } else {
     fetch(url)
       .then((res) => res.json())
